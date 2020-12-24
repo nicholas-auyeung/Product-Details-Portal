@@ -48,7 +48,7 @@ This program is a servlet-based web application that shows a form to enter produ
 
 16. If no input errors exist create product object with user input and set it into session and redirect to 'display.jsp'
 
-17. Inside display.jsp retrieve user input from product object from set session and implement display
+17. Inside display.jsp retrieve user input from product object from session and implement display
 
 18. Add a hyperlink to return back to 'index.jsp'
 
