@@ -11,5 +11,6 @@
 		<h2>Product Display</h2>
 		<div>${product}</div>
 	</div>
+	<a href="index.jsp">Display more products</a>
 </body>
 </html>

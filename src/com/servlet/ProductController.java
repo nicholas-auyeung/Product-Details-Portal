@@ -38,10 +38,10 @@ public class ProductController extends HttpServlet {
 		Matcher matcher = pattern.matcher(request.getParameter("productCategory"));
 		
 		if(!matcher.matches()) {
-			errors.put("invalidCateg","Enter a valid category\n");
+			errors.put("invalidCateg","Invalid category<br/>");
 		}
 		if(request.getParameter("productName").length() == 0) {
-			errors.put("nullProdName","Enter a product name\n");
+			errors.put("nullProdName","Enter a product name<br/>");
 		}
 		if(request.getParameter("productDescription").length() == 0) {
 			productDescription = "No description";
@@ -51,7 +51,7 @@ public class ProductController extends HttpServlet {
 		try {
 			Integer.parseInt(request.getParameter("productId"));
 		}catch(NumberFormatException e) {
-			errors.put("notInt", "Invalid product ID\n");
+			errors.put("notInt", "<br/>Invalid product ID<br/>");
 		}
 		if(errors.isEmpty()) {
 			Product p1 = new Product(Integer.parseInt(request.getParameter("productId")), request.getParameter("productName"), request.getParameter("productCategory"), productDescription);
