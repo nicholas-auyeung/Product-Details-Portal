@@ -54,12 +54,13 @@ This program is a servlet-based web application that shows a form to enter produ
 
 ## Usage
 
-	Once run, the webpage will ask user for product name, id, category, and description
+	Once run, the webpage will ask user for product id, name, category, and description
 ![](screenshots/insertproduct.png)
 
 User inputs incorrect product details (product id only accepts numeric characters, category accepts only alphabetical characters and max length of 5)
 	
-	User will be prompt with 'invalid product id', 'enter a product name', 'invalid category' messages 
+	User will be prompt with 'invalid product id', 'enter a product name', 'invalid category' messages
+	Can trigger multiple error messages dependent on user input
 ![](screenshots/invalidinput.png)
 
 User inputs correct credentials
