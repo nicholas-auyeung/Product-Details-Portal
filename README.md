@@ -38,7 +38,7 @@ This program is a servlet-based web application that shows a form to enter produ
 
 13. Clear current session data 
 
-13. Define 'ProdcutController' servlet
+13. Define 'ProductController' servlet
 
 14. Inside 'ProductController' start an HTTPSession
 
